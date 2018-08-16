@@ -22,7 +22,7 @@ public class HelloService {
      * @return
      */
     public String hiError(String name) {
-        return "hi," + name + ",sorry,error";
+        return "hello," + name + ",sorry,error";
     }
 
 }
