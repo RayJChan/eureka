@@ -5,11 +5,23 @@ eureka:
   instance:
     hostname: localhost
   client:
+  #是否向注册中心注册自己
    registerWithEureka: false
-   fetchRegistry: true
+   #是否启动检索功能
+   fetchRegistry: false
    serviceUrl:
-    defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    defaultZone: http://root:root@${eureka.instance.hostname}:${server.port}/eureka/
+#   defaultZone: http://root:root@${eureka.instance.hostname}:${server.port}/eureka/
+
+
+
 spring:
   application:
     name: eurka-server
+#  security:
+#    user:
+#      name: root
+#      password: root
+
+
 
